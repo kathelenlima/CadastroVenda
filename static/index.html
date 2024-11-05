@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Vendas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            background-image: url('https://www.example.com/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4a90e2;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #030303;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Verdana', sans-serif;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cadastro de Vendas</h2>
+        <form id="form-matricula">
+            <label for="dataVenda">Data da Venda:</label>
+            <input type="date" id="dataVenda" required>
+
+            <label for="valor">Valor:</label>
+            <input type="number" step="0.01" id="valor" required>
+
+            <label for="nomeAluno">Nome do Aluno:</label>
+            <input type="text" id="nomeAluno" required>
+
+            <label for="nomeVendedor">Nome do Vendedor:</label>
+            <input type="text" id="nomeVendedor" required>
+
+            <label for="nomeCurso">Nome do Curso:</label>
+            <input type="text" id="nomeCurso" required>
+
+            <button type="submit">Cadastrar Venda</button>
+        </form>
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
