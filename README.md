@@ -91,11 +91,11 @@ Corpo da requisição (JSON):
 - Clique em "Cadastrar Venda" para enviar os dados ao backend.
 
 ## Tecnologias Utilizadas
-Java: linguagem principal para o backend
-Spring Boot: framework para o desenvolvimento do backend
-PostgreSQL: banco de dados para armazenar os dados de vendas
-HTML/CSS/JavaScript: frontend para a interface de usuário
-Python: para iniciar um servidor HTTP local para o frontend
+- Java: linguagem principal para o backend
+- Spring Boot: framework para o desenvolvimento do backend
+- PostgreSQL: banco de dados para armazenar os dados de vendas
+- HTML/CSS/JavaScript: frontend para a interface de usuário
+- Python: para iniciar um servidor HTTP local para o frontend
 
 Estrutura do Projeto:
 ```
