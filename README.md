@@ -37,10 +37,11 @@ Antes de iniciar, certifique-se de que você possui os seguintes itens instalado
 
 Crie um banco de dados PostgreSQL para a aplicação.
 Atualize as credenciais de conexão ao banco de dados em src/main/resources/application.properties:
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/seu_banco
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
-
+```
 
 3.Instale as dependências com Maven:
 mvn clean install
@@ -50,17 +51,20 @@ mvn clean install
 1.Inicie o Backend (Spring Boot):
 
 Na raiz do projeto, execute:
-bash
+```bash
 mvn spring-boot:run
+```
 O servidor estará em execução em http://localhost:8080.
 
 2.Inicie o Frontend:
 - Navegue até a pasta src/main/resources/static:
+  ```
   cd src/main/resources/static
 
 - Inicie o servidor HTTP local para servir o arquivo index.html:
+```
   python -m http.server 3000
-
+```
 - Acesse a interface em http://localhost:3000/index.html.
 
 
@@ -68,10 +72,12 @@ O servidor estará em execução em http://localhost:8080.
 1.Testar a API:
 - Utilize uma ferramenta como Postman ou cURL para fazer requisições à API.
 - Exemplo de requisição para cadastrar uma venda:
+```
 POST http://localhost:8080/matriculas/adicionar
+```
 Corpo da requisição (JSON):
 
-
+```
 {
   "dataVenda": "2024-11-05",
   "valor": 150.50,
@@ -79,7 +85,7 @@ Corpo da requisição (JSON):
   "nomeVendedor": "Ana Pereira",
   "nomeCurso": "Java Básico"
 }
-
+```
 2. Testar o Frontend:
 - Acesse http://localhost:3000/index.html e preencha o formulário com os dados da venda.
 - Clique em "Cadastrar Venda" para enviar os dados ao backend.
@@ -92,6 +98,7 @@ HTML/CSS/JavaScript: frontend para a interface de usuário
 Python: para iniciar um servidor HTTP local para o frontend
 
 Estrutura do Projeto:
+```
 demo
 │
 ├── src
@@ -107,6 +114,7 @@ demo
 │   └── test                  # Testes unitários e de integração
 │
 └── README.md
+```
 
 ## Licença
 Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais informações.
